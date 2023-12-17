@@ -1,15 +1,15 @@
 set -e
-VERSION="$1"
+VERSION="0.8.0"
 
 # Normal image
-docker tag zodern/meteor zodern/meteor:latest
-docker tag zodern/meteor zodern/meteor:$VERSION
+docker tag djabatav/meteor djabatav/meteor:latest
+docker tag djabatav/meteor djabatav/meteor:$VERSION
 
-docker push zodern/meteor:latest
-docker push zodern/meteor:$VERSION
+docker push djabatav/meteor:latest
+docker push djabatav/meteor:$VERSION
 
 # root image
-docker tag zodern/meteor:root zodern/meteor:$VERSION-root
+docker tag djabatav/meteor:root djabatav/meteor:$VERSION-root
 
-docker push zodern/meteor:root
-docker push zodern/meteor:$VERSION-root
+docker push djabatav/meteor:root
+docker push djabatav/meteor:$VERSION-root

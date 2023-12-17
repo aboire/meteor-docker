@@ -1,4 +1,4 @@
-FROM zodern/meteor
+FROM djabatav/meteor
 LABEL maintainer="zodern"
 USER root
 RUN apt-get update && \
